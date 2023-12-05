@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransitRabbitMQ.Api", "src\MassTransitRabbitMQ.Api\MassTransitRabbitMQ.Api.csproj", "{E35B987B-A68E-4E5A-9AAD-D1F529CB0924}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransitRabbitMQ.Contracts", "src\MassTransitRabbitMQ.Contracts\MassTransitRabbitMQ.Contracts.csproj", "{F83540E8-2FD5-41B2-A41E-2D94DE603460}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransitRabbitMQ.Consumer.Api", "src\MassTransitRabbitMQ.Consumer.Api\MassTransitRabbitMQ.Consumer.Api.csproj", "{154D79FD-BF8B-4E48-9C6B-02F1A13B491D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E35B987B-A68E-4E5A-9AAD-D1F529CB0924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E35B987B-A68E-4E5A-9AAD-D1F529CB0924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E35B987B-A68E-4E5A-9AAD-D1F529CB0924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E35B987B-A68E-4E5A-9AAD-D1F529CB0924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F83540E8-2FD5-41B2-A41E-2D94DE603460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F83540E8-2FD5-41B2-A41E-2D94DE603460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F83540E8-2FD5-41B2-A41E-2D94DE603460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F83540E8-2FD5-41B2-A41E-2D94DE603460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{154D79FD-BF8B-4E48-9C6B-02F1A13B491D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{154D79FD-BF8B-4E48-9C6B-02F1A13B491D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{154D79FD-BF8B-4E48-9C6B-02F1A13B491D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{154D79FD-BF8B-4E48-9C6B-02F1A13B491D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65B622B7-6209-4817-99DB-42F512ECEEE9}
+	EndGlobalSection
+EndGlobal
