@@ -5,7 +5,7 @@ using RabbitMQ.Client.Events;
 using System.Text;
 using System.Text.Json;
 
-namespace Sample.Api.BackgroundServices
+namespace Sample.Consumer.Api
 {
     public class RabbitMQConsumerService : BackgroundService
     {

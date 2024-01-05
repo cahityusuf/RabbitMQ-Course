@@ -21,7 +21,7 @@ namespace Sample.Api.Controllers
         {
             _publisher.Publish(
                 message: message,
-                queueName: configuration.GetValue<string>("RabbitMqSettings:QueueName"),
+                queueName: configuration.GetValue<string>("RabbitMqOptions:QueueName"),
                 routeKey: "test");
 
             return Ok();

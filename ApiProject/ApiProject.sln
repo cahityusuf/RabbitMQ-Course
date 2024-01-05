@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ", "src\RabbitMQ\RabbitMQ.csproj", "{C0CF2E4E-3708-4DFD-9476-14FC11499FF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ", "src\RabbitMQ\RabbitMQ.csproj", "{C0CF2E4E-3708-4DFD-9476-14FC11499FF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Api", "src\Sample.Api\Sample.Api.csproj", "{CC28C08C-E516-4060-BE7F-46EB887F4B65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Api", "src\Sample.Api\Sample.Api.csproj", "{CC28C08C-E516-4060-BE7F-46EB887F4B65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstractions", "src\Abstractions\Abstractions.csproj", "{AF0A57C2-C7B5-4CC9-9B85-98322F59268D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Abstractions", "src\Abstractions\Abstractions.csproj", "{AF0A57C2-C7B5-4CC9-9B85-98322F59268D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Consumer.Api", "Sample.Consumer.Api\Sample.Consumer.Api.csproj", "{4707953F-55AF-4E71-99FB-705CB59AA6D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{AF0A57C2-C7B5-4CC9-9B85-98322F59268D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF0A57C2-C7B5-4CC9-9B85-98322F59268D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF0A57C2-C7B5-4CC9-9B85-98322F59268D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4707953F-55AF-4E71-99FB-705CB59AA6D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4707953F-55AF-4E71-99FB-705CB59AA6D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4707953F-55AF-4E71-99FB-705CB59AA6D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4707953F-55AF-4E71-99FB-705CB59AA6D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

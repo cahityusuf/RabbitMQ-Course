@@ -1,4 +1,5 @@
 using RabbitMQ;
+using Sample.Consumer.Api;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,16 +8,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-
+builder.Services.AddSwaggerGen();
 // RabbitMQManager örneðinizi kaydedin
 builder.Services.AddSingleton(typeof(RabbitMQManager<,>));
 
 // RabbitMqPublisher için dinamik kayýt
 builder.Services.AddSingleton(typeof(RabbitMqPublisher<,,>));
-
-
-builder.Services.AddSwaggerGen();
-
+builder.Services.AddHostedService<RabbitMQConsumerService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

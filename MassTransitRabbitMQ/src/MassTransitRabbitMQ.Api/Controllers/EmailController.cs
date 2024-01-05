@@ -19,7 +19,7 @@ namespace MassTransitRabbitMQ.Api.Controllers
         public async Task<IActionResult> Post([FromBody] EmailModel message)
         {
             await _publishEndpoint.Publish(message);
-            return Ok();
+            return Accepted();
         }
     }
 }

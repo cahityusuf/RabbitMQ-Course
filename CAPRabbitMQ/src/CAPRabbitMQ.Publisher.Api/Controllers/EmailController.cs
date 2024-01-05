@@ -1,4 +1,6 @@
-﻿using DotNetCore.CAP;
+﻿using CAPRabbitMQ.Publisher.Api.Services;
+using DotNetCore.CAP;
+using Hangfire;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CAPRabbitMQ.Publisher.Api.Controllers
@@ -7,17 +9,13 @@ namespace CAPRabbitMQ.Publisher.Api.Controllers
     [ApiController]
     public class EmailController : ControllerBase
     {
-        private readonly ICapPublisher _capPublisher;
-
-        public EmailController(ICapPublisher capPublisher)
-        {
-            _capPublisher = capPublisher;
-        }
-
         [HttpPost]
         public async Task<IActionResult> PublishMessage([FromBody] string message)
         {
-            await _capPublisher.PublishAsync("sample.rabbitmq.inmemory", message);
+            RecurringJob.AddOrUpdate<IEmailService>(
+                "myrecurringjob",
+                p => p.Send("Merhaba"),
+                Cron.Minutely);
 
             return Ok();
         }
